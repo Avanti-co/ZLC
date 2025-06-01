@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Michelo Muntanga Muhyila - Business Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #f3fff6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .business-card {
+      display: flex;
+      flex-direction: row;
+      max-width: 960px;
+      width: 100%;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      transition: 0.3s ease;
+    }
+
+    .business-card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .left, .right {
+      padding: 36px;
+      flex: 1;
+    }
+
+    .left {
+      background: linear-gradient(135deg, #1b5e20, #388e3c);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .left h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .position {
+      font-size: 16px;
+      font-weight: 500;
+      opacity: 0.9;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .slogan {
+      font-size: 14px;
+      font-style: italic;
+      margin-top: 30px;
+      opacity: 0.85;
+    }
+
+    .right {
+      background: linear-gradient(to bottom right, #ffffff, #f9fdfb);
+      color: #333;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .logo img {
+      height: 70px;
+      
+    }
+
+    .logo h3 {
+      font-size: 18px;
+      margin: 0;
+      font-weight: 600;
+      color: #1b5e20;
+    }
+
+    .right p {
+      margin: 12px 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .right p strong {
+      color: #2e7d32;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    a {
+      color: #1b5e20;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #33691e;
+      text-decoration: underline;
+    }
+
+    i {
+      color: #1b5e20;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .business-card {
+        flex-direction: column;
+      }
+
+      .left {
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .logo {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left h2 {
+        font-size: 18px;
+      }
+
+      .position,
+      .right p {
+        font-size: 13px;
+      }
+
+      .slogan {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="business-card">
+    <div class="left">
+      <div>
+        <h2><i class="fas fa-user"></i> Michelo Muntanga Muhyila</h2>
+        <p class="position"><i class="fas fa-briefcase"></i> Human Resource & Administration Manager</p>
+      </div>
+      <p class="slogan">"Working towards an indigenous legal system"</p>
+    </div>
+    <div class="right">
+      <div class="logo">
+        <img src="https://cdn.greatzambiajobs.com/jsjobsdata/data/employer/comp_6704/logo/zanl.jpeg" alt="Zambia Emblem">
+        <h3><i class="fas fa-landmark"></i> Zambia Law Development Commission</h3>
+      </div>
+
+      <p>
+        <strong><i class="fas fa-map-marker-alt"></i> Address:</strong>
+        Plot 26F Cheetah Road, Kabulonga<br>
+        P.O. Box 34670
+      </p>
+
+      <p>
+        <strong><i class="fas fa-phone-alt"></i> Phones:</strong>
+        +260 955 801 983<br>
+        +260 966 801 983<br>
+        +260 978 519 130
+      </p>
+
+      <p>
+        <strong><i class="fas fa-envelope"></i> Emails:</strong>
+        <a href="mailto:muhyilamichelo@gmail.com"><i class="far fa-envelope"></i> muhyilamichelo@gmail.com</a><br>
+        <a href="mailto:michelomuhyila@yahoo.com"><i class="far fa-envelope"></i> michelomuhyila@yahoo.com</a>
+      </p>
+
+      <p>
+        <strong><i class="fas fa-hashtag"></i> Socials:</strong>
+        <i class="fab fa-facebook"></i> @Zambia Law Development Commission<br>
+        <i class="fab fa-instagram"></i> <a href="#">@zambia_law</a><br>
+        <i class="fas fa-globe"></i> <a href="http://www.zambialawdevelopment.org" target="_blank">www.zambialawdevelopment.org</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
